@@ -1,0 +1,259 @@
+<div class="conatiner-fluid">
+  <div class="row">
+    <div class="col-12 main_banner">
+      <div id="carouselExample" class="carousel slide  carousel-fade" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" *ngFor="let image of images; let i = index" data-bs-target="#carouselExample"
+            [attr.data-bs-slide-to]="i" [class.active]="i === 0" [attr.aria-current]="i === 0 ? 'true' : null"
+            [attr.aria-label]="'Slide' + (i + 1)"></button>
+        </div>
+
+
+        <div class="carousel-inner">
+          <div class="carousel-item" data-bs-interval="3000" *ngFor="let image of images; let i = index"
+            [class.active]="i === 0">
+            <img [src]="image.path" [alt]="image.alt" style="width: 100%;" loading="lazy" />
+            <!-- <div class="carousel-caption" [ngClass]="{
+                favorite_banner: image.heading === 'Shop Your Favorite Products Easily',}">
+              <h2>{{ image.heading }}</h2>
+              <p>{{ image.para }}</p>
+              <span class="mt-sm-5 mt-2">{{ image.para2 }}</span>
+
+            </div> -->
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="col-md-12 our_trusted_partner">
+      <div class="content">
+        <h3>Your Trusted Partner</h3>
+      <p>At RCS Engineering Services, we are dedicated to
+        provide innovative engineering solutions that
+        empower our clients to achieve their goals efficiently
+        and sustainably. With our diverse expertise and
+        commitment to excellence, we offer a
+        comprehensive range of engineering and software
+        services tailored to meet the unique needs of each
+        project.
+        <br>
+        Together, with our clients, industry partners and our
+        global team; we are committed to solve toughest
+        engineering problems and make world a better
+        place
+      </p>
+
+      <div class="btndiv">
+        <button class="button-55" align="right"> Read More</button>
+      </div>
+
+      </div>
+    
+    </div>
+
+    <div class="col-12">
+      <div class="row services_we_offer" style="padding: 25px;">
+        <h3>Services We Offer</h3>
+        <div class="col-lg-3 col-sm-6 main_img" (click)="route_to_page('product-engineering')">
+          <div class="image-container">
+            <img src="assets/Images/Services_PE_L.webp" alt="Image">
+            <div class="overlay">
+              <p>Product Engineering</p>
+            </div>
+          </div>
+          <h4>Product Engineering</h4>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 main_img" (click)="route_to_page('software-engineering')">
+          <div class="image-container">
+            <img src="assets/Images/Services_SE.webp" alt="Image">
+            <div class="overlay">
+              <p>Software Engineering</p>
+            </div>
+          </div>
+          <h4>Software Engineering</h4>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 main_img" (click)="route_to_page('digital-engineering')">
+          <div class="image-container">
+            <img src="assets/Images/Services_DE.webp" alt="Image">
+            <div class="overlay">
+              <p>Digital Engineering</p>
+            </div>
+          </div>
+
+          <h4>Digital Engineering</h4>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 main_img" (click)="route_to_page('consulting')">
+          <div class="image-container">
+            <img src="assets/Images/Services_Consulting.webp" alt="Image">
+            <div class="overlay">
+              <p>Consulting</p>
+            </div>
+          </div>
+
+          <h4>Consulting</h4>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="row industries_we_serve" style="padding: 25px;">
+        <h3>Industries We Serve</h3>
+
+        <div class="col-md-3 col-sm-4 main_img">
+          <img src="assets/Images/industry1.JPG" alt="Image">
+
+          <h4>Energy</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 main_img">
+          <img src="assets/Images/industry2.JPG" alt="Image">
+
+          <h4>Aerospace & Defense </h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 main_img">
+          <img src="assets/Images/industry3.JPG" alt="Image">
+
+          <h4>Healthcare</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 main_img">
+          <img src="assets/Images/industry4.JPG" alt="Image">
+
+          <h4>Automotive</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 main_img">
+          <img src="assets/Images/industry5.JPG" alt="Image">
+
+          <h4>Telecom</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 main_img">
+          <img src="assets/Images/industry6.JPG" alt="Image">
+
+          <h4>Banking & Finance</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 main_img">
+          <img src="assets/Images/industry7.JPG" alt="Image">
+
+          <h4>Retail</h4>
+        </div>
+
+        <div class="col-md-3 col-sm-4 main_img">
+          <img src="assets/Images/industry8.JPG" alt="Image">
+
+          <h4>Consumer Goods</h4>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-12">
+
+      <div class="row part4">
+
+        <div class="col-lg-6 quality_product_div2">
+
+          <h4>Why Choose RCS?</h4>
+          <div class="myunderline"></div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus magni nam unde delectus, fuga ea voluptatum
+            eius reprehenderit a. Consequatur nemo possimus harum quas repellendus explicabo temporibus ipsum
+            necessitatibus neque?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nam, consequatur sint neque tempora
+            consectetur! Ullam similique, laudantium tenetur iure explicabo eum itaque provident cumque facilis fugiat,
+            ipsam omnis cupiditate.
+          </p>
+
+          <button class="contact_us">
+            Learn More
+          </button>
+
+        </div>
+
+        <div class="col-lg-6 p-md-5 p-3">
+          <form [formGroup]="enquiry_form" (ngSubmit)="onSubmit()">
+            <div class="row formside">
+              <div class="col-12 colheading_part1">
+                <h4>Contact Us</h4>
+                <p>We’ll get back to you soon</p>
+              </div>
+
+              <div class="input_field col-md-6">
+                <label for="firstName">First Name</label>
+                <input id="firstName" formControlName="firstName" placeholder="First Name" />
+                <div *ngIf="firstName?.invalid && firstName?.touched" class="error">
+                  <small *ngIf="firstName?.errors?.['required']">First Name is required.</small>
+                  <small *ngIf="firstName?.errors?.['minlength']">First Name must be at least 2 characters long.</small>
+                  <small *ngIf="firstName?.errors?.['maxlength']">First Name cannot exceed 30 characters.</small>
+                </div>
+              </div>
+
+              <div class="input_field col-md-6 px-md-2">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" formControlName="lastName" placeholder="Last Name" />
+                <div *ngIf="lastName?.invalid && lastName?.touched" class="error">
+                  <small *ngIf="lastName?.errors?.['required']">Last Name is required.</small>
+                  <small *ngIf="lastName?.errors?.['minlength']">Last Name must be at least 2 characters long.</small>
+                  <small *ngIf="lastName?.errors?.['maxlength']">Last Name cannot exceed 30 characters.</small>
+                </div>
+              </div>
+
+              <div class="input_field col-12">
+                <label for="email">Email</label>
+                <input id="email" formControlName="email" placeholder="Email" />
+                <div *ngIf="email?.invalid && email?.touched" class="error">
+                  <small *ngIf="email?.errors?.['required']">Email is required.</small>
+                  <small *ngIf="email?.errors?.['email']">Enter a valid email address.</small>
+                </div>
+              </div>
+
+              <div class="input_field col-12">
+                <label for="phone">Mobile Number</label>
+                <input id="phone" formControlName="phone" placeholder="Mobile Number" />
+                <div *ngIf="phone?.invalid && phone?.touched" class="error">
+                  <small *ngIf="phone?.errors?.['required']">Phone Number is required.</small>
+                  <small *ngIf="phone?.errors?.['pattern']">Enter a valid phone number.</small>
+                </div>
+              </div>
+
+              <div class="col-12 input_field">
+                <label for="message_to">Message</label>
+                <textarea formControlName="message" id="message_to" placeholder="Write your message here..."></textarea>
+                <div *ngIf="message?.invalid && message.touched" class="error">
+                  <small *ngIf="message?.errors?.['required']">Message is required please write reason to
+                    connect</small>
+                </div>
+              </div>
+
+              <button type="submit">Submit</button>
+
+            </div>
+          </form>
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

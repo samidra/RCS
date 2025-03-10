@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-image: url("../../../assets/Images/contact.jpg");
+    align-items: center;
+    h2{
+        color: #010831;
+        font-weight: 600;
+        background-color: #d3d2d28a;
+        width: 40%;
+        padding: 30px 0;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+/* Our Story */
+.about_row{
+    background: url("../../../assets/Images/page_home.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.ourstry{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-bottom: 5px solid #003b88;
+ h2 {
+    font-weight: 600;
+    font-size: 2.6em;
+    color: #003b88;
+}
+
+h3 {
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 1.8em;
+    color: #003b88;
+}
+ p {
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 1em;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 60%;
+}
+
+}
+
+.ourvision{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-bottom: 5px solid #003b88;
+
+h3 {
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+ p {
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 1em;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 60%;
+}
+
+}
+
+/* whyus */
+
+
+.whyuscont {
+    h2 {padding-top: 30px;
+        font-weight: 600;
+        font-size: 2.6em;
+        text-align: center;
+        color: #003b88;
+}
+}
+
+.whyus2 {
+    justify-content: space-around;
+    margin-top: 40px;
+    .squarecontent {
+        position: relative;
+        margin-top: 50px;
+        background: #FFFFFF;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+
+        h4 {
+            text-align: center;
+            border-bottom: 1px solid;
+            padding-top: 0.3em;
+            font-weight: 500;
+            font-size: 1.3em;
+            line-height: 34px;
+            color: #3d87eb;
+        }
+
+        p {
+            font-weight: 600;
+            margin-top: 16px;
+            font-size: 0.8em;
+            text-align: center;
+            color: #000000;
+        }
+    }
+    
+    .corner-element {
+        border-radius: 3px;
+        width: 62px;
+        height: 62px;
+        background: #003b88;
+        position: absolute;
+        top: -25px;
+        left: -25px;
+        z-index: -1;
+    }
+}
+
+/* <!-- LET'S TALK --> */
+
+.letstalk {
+    background: #3d87eb;
+
+    p {
+        font-weight: 500;
+        font-size: 1.1em;
+        color: #FFFFFF;
+        padding-top: 4px;
+    }
+
+    .ctnus {
+        background-color: #004aad;
+        cursor: pointer;
+       
+        &:hover {
+            background-color: #003b88;
+        }
+    }
+
+    a { 
+        padding: 5px;
+        color: white !important;
+        text-decoration: none;
+        font-size: 0.75em;
+        font-weight: 600;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .header{
+        
+        h2{
+            width: 90%;
+        }
+    }
+    
+    .ourstry{
+        padding: 60px 20px;
+     h2 {
+        font-size: 2.6em;
+    }
+    
+    h3 {
+        font-size: 1.6em;
+    }
+     p {
+        font-weight: 600;
+        font-size: 0.75em;
+        width: 90%;
+    }
+    
+    }
+    
+    .ourvision{
+        padding: 60px 20px;
+    
+        h3 {
+            font-size: 1.6em;
+        }
+         p {
+            font-weight: 600;
+            font-size: 0.75em;
+            width: 90%;
+        }
+    
+    }
+
+    .letstalk {
+    
+        p {
+            font-size: 0.8em;
+        }
+    
+        .ctnus {
+            background-color: #004aad;
+            cursor: pointer;
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 0.6em;
+            }
+            &:hover {
+                background-color: #003b88;
+            }
+        }
+    
+       
+    }
+  
+}

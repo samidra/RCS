@@ -1,0 +1,127 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 header">
+            <h1>Start a conversation
+              <p class="mt-2">Get in touch with us to discuss new product 
+                ideas and business opportunities.</p>
+            </h1>
+            
+        </div>
+    </div>
+
+    <div class="row part4">
+    
+        <div class="col-lg-6 quality_product_div2">
+    
+          <h4>Message for Customer</h4>
+          <div class="myunderline"></div>
+    
+          <p>
+            Don’t miss out the opportunity to work with a
+team that is as committed to your success as you
+are. Reach out to us today and let’s make your
+goals a reality.
+
+          </p>
+
+    
+        </div>
+    
+        <div class="col-lg-6 p-md-5 p-3">
+          <form [formGroup]="enquiry_form" (ngSubmit)="onSubmit()">
+            <div class="row formside">
+              <div class="col-12 colheading_part1">
+                <h4>Contact Us</h4>
+                <p>We’ll get back to you soon</p>
+              </div>
+    
+              <div class="input_field col-md-6">
+                <label for="firstName">First Name</label>
+                <input id="firstName" formControlName="firstName" placeholder="First Name" />
+                <div *ngIf="firstName?.invalid && firstName?.touched" class="error">
+                  <small *ngIf="firstName?.errors?.['required']">First Name is required.</small>
+                  <small *ngIf="firstName?.errors?.['minlength']">First Name must be at least 2 characters long.</small>
+                  <small *ngIf="firstName?.errors?.['maxlength']">First Name cannot exceed 30 characters.</small>
+                </div>
+              </div>
+    
+              <div class="input_field col-md-6 px-md-2">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" formControlName="lastName" placeholder="Last Name" />
+                <div *ngIf="lastName?.invalid && lastName?.touched" class="error">
+                  <small *ngIf="lastName?.errors?.['required']">Last Name is required.</small>
+                  <small *ngIf="lastName?.errors?.['minlength']">Last Name must be at least 2 characters long.</small>
+                  <small *ngIf="lastName?.errors?.['maxlength']">Last Name cannot exceed 30 characters.</small>
+                </div>
+              </div>
+    
+              <div class="input_field col-12">
+                <label for="email">Email</label>
+                <input id="email" formControlName="email" placeholder="Email" />
+                <div *ngIf="email?.invalid && email?.touched" class="error">
+                  <small *ngIf="email?.errors?.['required']">Email is required.</small>
+                  <small *ngIf="email?.errors?.['email']">Enter a valid email address.</small>
+                </div>
+              </div>
+    
+              <div class="input_field col-12">
+                <label for="phone">Mobile Number</label>
+                <input id="phone" formControlName="phone" placeholder="Mobile Number" />
+                <div *ngIf="phone?.invalid && phone?.touched" class="error">
+                  <small *ngIf="phone?.errors?.['required']">Phone Number is required.</small>
+                  <small *ngIf="phone?.errors?.['pattern']">Enter a valid phone number.</small>
+                </div>
+              </div>
+
+              <div class="col-12 input_field">
+                <label for="message_to">Message</label>
+                <textarea formControlName="message" id="message_to" placeholder="Write your message here..."></textarea>
+                <div *ngIf="message?.invalid && message.touched" class="error">
+                <small *ngIf="message?.errors?.['required']">Message is required please write reason to connect</small>
+                </div>
+              </div>
+    
+              <button type="submit">Submit</button>
+    
+            </div>
+          </form>
+    
+    
+    
+        </div>
+    
+      </div>
+
+      <hr>
+      <div class="row p-3">
+        <div class="col-12 contactandmap">
+            <h3>Get in touch</h3>
+            <h5 class="m-3">Drop an email or give us a call.</h5>
+        </div>
+    </div>
+    <div class="row p-md-5 p-2 addimg">
+
+        <div class="col-md-5">
+            <div class="row p-md-3 p-1 mt-md-5">
+                <div class="col-12 m-2 addinfo loca2">
+                    <h5 style="color:black;" class="m-1 mt-2"><img src="assets/Footer/address.png"  height="20px"> &nbsp;Location:</h5>
+                    <p>  Lorem, ipsum dolor.<br>Block C,
+                        Lorem ipsum.,<br>UP-201301,India
+                    </p>
+                </div>
+                <div class="col-12 m-2 addinfo loca2">
+                    <h5 style="color:black;" class="m-1 mt-2"><img src="assets/Footer/mail.png"  height="20px"> &nbsp;E-mail:</h5>
+                    <a href="mailto:info@rcsengg.com">{{'info@rcsengg.com'}}
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-md-7">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.815056000083!2d77.5514512383572!3d12.983677914668418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d5b2385192b%3A0x76f68b6ad0cf690a!2sRCS%20ENGINEERING%20%26%20PROJECTS%20CONSULTANTS!5e0!3m2!1sen!2sin!4v1734632273388!5m2!1sen!2sin" width="650" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+
+
