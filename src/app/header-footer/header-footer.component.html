@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg" [ngClass]="{'fixed': isScrolled}">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="assets/Carousel/Header and footer.svg" alt="" srcset="">
+      <img src="assets/Carousel/rcs logo 65.png" alt="" srcset="">
     </a>
 
     <i class="bi bi-list smallmenuicon" (click)="toggleNav()"></i>
@@ -19,7 +19,7 @@
           <li class="submenu">
             <a>Digital Engineering <i class="bi bi-caret-right-fill"></i></a>
             <ul class="submenu-items">
-              <h6>Digital Engineering <i class="bi bi-caret-down-fill"></i></h6>
+              <!-- <h6>Digital Engineering <i class="bi bi-caret-down-fill"></i></h6> -->
               <li><a (click)="route_to_page('digital-engineering')">Data Engineering </a></li>
               <li><a (click)="route_to_page('digital-engineering')">Machine Learning & AI </a></li>
               <li><a (click)="route_to_page('digital-engineering')">Cloud Services </a></li>
@@ -29,7 +29,7 @@
           <li class="submenu">
             <a>Software Engineering <i class="bi bi-caret-right-fill"></i></a>
             <ul class="submenu-items">
-              <h6>Software Engineering <i class="bi bi-caret-down-fill"></i></h6>
+              <!-- <h6>Software Engineering <i class="bi bi-caret-down-fill"></i></h6> -->
               <li><a (click)="route_to_page('software-engineering')">Custom Software Development</a></li>
               <li><a (click)="route_to_page('software-engineering')">Software Architecture & Design</a></li>
               <li><a (click)="route_to_page('software-engineering')">Legacy System Modernization</a></li>
@@ -44,7 +44,7 @@
           <li class="submenu">
             <a>Product Engineering <i class="bi bi-caret-right-fill"></i></a>
             <ul class="submenu-items">
-              <h6>Product Engineering <i class="bi bi-caret-down-fill"></i></h6>
+              <!-- <h6>Product Engineering <i class="bi bi-caret-down-fill"></i></h6> -->
               <li><a (click)="route_to_page('product-engineering')">Mechanical Engineering</a></li>
               <li><a (click)="route_to_page('product-engineering')">Embedded Engineering</a></li>
               <li><a (click)="route_to_page('product-engineering')">Manufacturing Engineering</a></li>
@@ -103,11 +103,11 @@
 <router-outlet />
 
 <div class="container-fluid footer_scss footcont">
-  <div class="row p-sm-4">
+  <div class="row">
     <div class="col-12">
-      <img src="assets/Carousel/Header and footer.svg" alt="" srcset="" height="70px">
+      <img src="assets/Carousel/rcs logo 100.png" class="log_img" alt="" srcset="">
     </div>
-    <div class="col-lg-3 about_rcs mt-5">
+    <div class="col-lg-4 about_rcs mt-3">
       <div class="newletterfoot">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing
           elit. Doloremque quasi, laudantium, eum dolor praesentium molestias necessitatibus inventore neque ratione
@@ -117,7 +117,7 @@
     </div>
 
 
-    <div class="col-lg-2 col-6 mt-3">
+    <div class="col-lg-1 col-6 mt-3">
       <div class="cateG">
         <ul>
           <li class="categoryfoot">
@@ -127,16 +127,8 @@
           <li>
             <a>Home</a>
           </li>
-
           <li>
             <a (click)="route_to_page('about-us')">About Us</a>
-          </li>
-          <li>
-            <a>Our Services</a>
-          </li>
-
-          <li>
-            <a (click)="route_to_page('industries')">Industries</a>
           </li>
           <li>
             <a (click)="route_to_page('career')">Career</a>
@@ -148,30 +140,24 @@
       </div>
     </div>
 
-    <div class="col-lg-2 col-6 mt-3">
+    <div class="col-lg-2 col-6 mt-3 px-lg-4">
       <div class="cateG">
         <ul>
           <li class="categoryfoot">
-            <span class="categoryfoot1">Top Services</span>
+            <span class="categoryfoot1">Our Services</span>
           </li>
 
           <li>
-            <a>Product Engineering</a>
+            <a (click)="route_to_page('digital-engineering')">Digital Engineering</a>
           </li>
           <li>
-            <a>Software Engineering</a>
+            <a (click)="route_to_page('software-engineering')">Software Engineering</a>
           </li>
           <li>
-            <a>Digital Engineering</a>
+            <a (click)="route_to_page('product-engineering')">Product Engineering</a>
           </li>
           <li>
-            <a>Data Engineering</a>
-          </li>
-          <li>
-            <a>Consulting</a>
-          </li>
-          <li>
-            <a>Digital Solutions</a>
+            <a (click)="route_to_page('consulting')">Consulting</a>
           </li>
         </ul>
       </div>
@@ -185,27 +171,20 @@
           </li>
 
           <li>
-            <a>Energy</a>
+            <a (click)="route_to_page('industries')">Energy</a>
           </li>
           <li>
-            <a>Aerospace & Defense</a>
+            <a (click)="route_to_page('industries')">Aerospace & Defense</a>
           </li>
           <li>
-            <a>Healthcare</a>
+            <a (click)="route_to_page('industries')">Automotive</a>
           </li>
           <li>
-            <a>Automotive</a>
-          </li>
-          <li>
-            <a>Banking & Finance</a>
-          </li>
-          <li>
-            <a>Consumer Goods</a>
+            <a (click)="route_to_page('industries')" style="text-decoration: underline;">View All</a>
           </li>
         </ul>
       </div>
     </div>
-
 
     <div class="col-lg-3 mt-3">
 
@@ -218,7 +197,7 @@
           Bangalore | Delhi | Houston
         </p>
 
-        <p class="text-color">
+        <p class="addressfoot1 mt-2">
           <span><img src="assets/Footer/mail.png" alt="Mail" srcset=""></span>
           <a href="mailto:info@rcsengg.com">{{'info@rcsengg.com'}}
           </a>
@@ -239,7 +218,7 @@
       </div>
     </div>
     <div class="col-12 mt-5 copy_right">
-      <span>COPYRIGHT &copy; 2024 RCS ENGINEERING SERVICES PVT LTD | All Right Reserved.</span>
+      <span>COPYRIGHT &copy; 2024 RCS ENGINEERING SERVICES PVT LTD | All Right Reserved</span>
     </div>
   </div>
 </div>

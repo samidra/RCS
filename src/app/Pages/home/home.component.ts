@@ -14,22 +14,22 @@ export class HomeComponent {
   images = [
 
     {
-      heading: '',
-      path: 'assets/Carousel/slide 1.webp',
-      para: '',
-      alt: 'img home.',
+      heading: 'Your Trusted Partner for Engineering <br> and Digital Transformation',
+      path: 'assets/Carousel/slide 11.webp',
+      para: 'Reimagining Future through Innovation',
+      alt: 'Your Trusted Partner',
     },
     {
-      heading: '',
-      path: 'assets/Carousel/slide 2.webp',
-      para: '',
-      alt: 'img home.',
+      heading: 'Success Factors',
+      path: 'assets/Carousel/slide 22.webp',
+      para: 'Domain Expertise & Delivery Excellence ',
+      alt: 'Success Factors',
     },
     {
-      heading: '',
-      path: 'assets/Carousel/slide 3.webp',
-      para: '',
-      alt: 'img home.',
+      heading: 'Striving for Better Tomorrow',
+      path: 'assets/Carousel/slide 33.webp',
+      para: 'Reimagining Future through Innovation',
+      alt: 'Striving for Better Tomorrow',
     },
     
   ];

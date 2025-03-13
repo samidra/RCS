@@ -6,21 +6,6 @@
 
 .header{
     background-image: url("../../../assets/Images/Digital Engineering.webp");
-    padding-left: 30px;
-    color: white;
-
-    h1 {
-        background-color: #0000008a;
-        border-radius: 5px;
-        padding: 30px 10px;
-        width: fit-content;
-        p {
-            font-weight: 400;
-            font-size: 0.38em;
-            line-height: 1.6;
-            color: #FFFFFF;
-        }
-    }
 }
 
 .sub_topics {
@@ -40,21 +25,23 @@
         padding: 10px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
+        .underline{
+            width: 45%;
+            border-bottom: 4px solid #004AAD;
+        }
         h4 {
             text-align: center;
+            border-bottom: 4px solid #004AAD;
             color: #004AAD;
             padding-bottom: 5px;
-            border-bottom: 3px solid #004AAD;
             font-weight: 700;
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
 
         p {
             padding-left: 10px;
             padding-top: 20px;
-            font-size: 0.9em;
+            font-size: 0.85em;
             font-weight: 500;
         }
 
@@ -62,10 +49,12 @@
             padding-top: 5px;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
+            padding-left: 50px;
 
             li {
-                padding: 8px;
+                padding: 8px 0pc;
+                list-style: disc;
                 font-size: 0.8em;
                 font-weight: 600;
                 line-height: 10px;
@@ -74,35 +63,6 @@
     }
 }
 
-/* <!-- LET'S TALK --> */
-
-.letstalk {
-    background: #3d87eb;
-
-    p {
-        font-weight: 500;
-        font-size: 1.1em;
-        color: #FFFFFF;
-        padding-top: 4px;
-    }
-
-    .ctnus {
-        background-color: #004aad;
-        cursor: pointer;
-       
-        &:hover {
-            background-color: #003b88;
-        }
-    }
-
-    a { 
-        padding: 5px;
-        color: white !important;
-        text-decoration: none;
-        font-size: 0.75em;
-        font-weight: 600;
-    }
-}
 
 @media (max-width: 1200px){
     .sub_topics {
@@ -162,28 +122,6 @@
         .content_part {
             justify-content: flex-start;
         }
-    }
-
-    .letstalk {
-    
-        p {
-            font-size: 0.8em;
-        }
-    
-        .ctnus {
-            background-color: #004aad;
-            cursor: pointer;
-            a {
-                color: white;
-                text-decoration: none;
-                font-size: 0.6em;
-            }
-            &:hover {
-                background-color: #003b88;
-            }
-        }
-    
-       
     }
   
 }

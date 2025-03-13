@@ -2,37 +2,6 @@ $background-color_1: rgb(226, 222, 222);
 
 .main_banner {
 
-    padding: 10px 0px;
-
-    .carousel-control.rytt {
-        right: 0;
-        left: auto;
-        color: black;
-        height: 47px;
-        top: 45%;
-        width: 50px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .carousel-control .glyphicon-chevron-left,
-    .carousel-control .glyphicon-chevron-right,
-    .carousel-control .icon-next,
-    .carousel-control .icon-prev {
-        top: 34% !important;
-    }
-
-    .carousel-control.lytt {
-        right: auto;
-        left: 0;
-        color: black;
-        height: 47px;
-        top: 45%;
-        width: 50px;
-        display: flex;
-        justify-content: center;
-    }
-
     .carousel {
         width: 100%;
         background-color: $background-color_1;
@@ -54,26 +23,34 @@ $background-color_1: rgb(226, 222, 222);
             position: absolute;
             display: flex;
             top: 0;
-            left: 8vmax;
+            left: 2em;
             justify-content: center;
             flex-direction: column;
-            width: 40%;
+            width: 50%;
 
             h2 {
                 font-weight: 600;
-                font-size: 2.3vmax;
+                font-size: 1.8em;
                 letter-spacing: 0em;
-                line-height: 1em;
+                line-height: 40px;
                 text-align: left;
                 color: whitesmoke;
                 text-shadow: 30px #262626;
             }
 
+            .underline{
+                width: 66%;
+                margin: 10px 0;
+                margin-bottom: 20px;
+                border-bottom: 4px solid #d1c304;
+            }
+            
             p {
+                
                 width: 90%;
-                font-weight: 500;
-
-                font-size: 1em;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 1.3em;
                 line-height: 1.3em;
                 letter-spacing: 0em;
                 text-align: left;
@@ -213,26 +190,25 @@ $background-color_1: rgb(226, 222, 222);
 }
 
 .our_trusted_partner {
-    margin-top: 50px;
-    padding: 5px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background: url("../../../assets/Images/Trusted-Partner.webp") no-repeat right top;
     background-size: contain;
-
+    height: 65vh;
     .content {
-        padding: 30px 0;
-        width: 50%;
+        // padding: 15px 0;
+        width: 55%;
         h3 {
             text-align: center;
-            color: #004AAD;
-            font-weight: 700;
+            font-weight: 600;
             font-size: 1.8em;
+            color: #004AAD;
         }
     
         p {
-            font-weight: 600;
+            font-weight: 500;
+            font-size: 1em;
             text-align: justify;
             padding: 0 20px;
         }
@@ -248,13 +224,13 @@ $background-color_1: rgb(226, 222, 222);
 }
 
 .services_we_offer {
-    margin-top: 50px;
+    padding-top: 30px;
     border-top: 1px solid rgb(212, 212, 212);
 
     h3 {
-        text-align: center;
         color: #004AAD;
-        font-weight: 700;
+        text-align: center;
+        font-weight: 600;
         font-size: 1.8em;
     }
 
@@ -319,11 +295,11 @@ $background-color_1: rgb(226, 222, 222);
 .industries_we_serve {
     margin-top: 50px;
     border-top: 1px solid rgb(212, 212, 212);
-
+    color: #ffffff;
+    background: #003b88;
     h3 {
         text-align: center;
-        color: #004AAD;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 1.8em;
     }
 
@@ -337,15 +313,15 @@ $background-color_1: rgb(226, 222, 222);
 
         img{
             border-radius: 50%;
-            height: 70%;
-            width: 60%;
+            height: 90%;
+            width: 80%;
             filter: blur(1px);
         }
         h4 {
             text-align: center;
             margin-top: 10px;
-            font-size: 0.95em;
-            font-weight: 600;
+            font-size: 0.85em;
+            font-weight: 500;
         }
     }
 }
@@ -449,6 +425,27 @@ $background-color_1: rgb(226, 222, 222);
     }
 }
 
+
+@media (max-width: 1200px) {
+    .services_we_offer {
+    
+    
+        .main_img {
+            .image-container {
+    
+                img {
+                    height: 250px;
+                }
+            }
+    
+    
+            h4 {
+                font-size: 0.75em;
+            }
+        }
+    }
+}
+
 @media (max-width: 1160px) {
 
     .our_trusted_partner {
@@ -476,4 +473,32 @@ $background-color_1: rgb(226, 222, 222);
         }
     }
     
+    .services_we_offer {
+    
+    
+        .main_img {
+            .image-container {
+    
+                img {
+                    height: 150px;
+                }
+            }
+    
+    
+            h4 {
+                font-size: 0.55em;
+            }
+        }
+    }
+
+    .industries_we_serve {
+    
+        .main_img {
+            
+            h4 {
+                font-size: 0.6em;
+                font-weight: 700;
+            }
+        }
+    }
 }

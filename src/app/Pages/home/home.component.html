@@ -11,27 +11,17 @@
 
 
         <div class="carousel-inner">
-          <div class="carousel-item" data-bs-interval="3000" *ngFor="let image of images; let i = index"
+          <div class="carousel-item" data-bs-interval="2000" *ngFor="let image of images; let i = index"
             [class.active]="i === 0">
             <img [src]="image.path" [alt]="image.alt" style="width: 100%;" loading="lazy" />
-            <!-- <div class="carousel-caption" [ngClass]="{
-                favorite_banner: image.heading === 'Shop Your Favorite Products Easily',}">
-              <h2>{{ image.heading }}</h2>
+            <div class="carousel-caption">
+              <h2 [innerHTML]="image.heading"></h2>
+              <div class="underline"></div>
               <p>{{ image.para }}</p>
-              <span class="mt-sm-5 mt-2">{{ image.para2 }}</span>
-
-            </div> -->
+            </div>
           </div>
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
 
@@ -62,29 +52,10 @@
     </div>
 
     <div class="col-12">
-      <div class="row services_we_offer" style="padding: 25px;">
+      <div class="row services_we_offer">
         <h3>Services We Offer</h3>
-        <div class="col-lg-3 col-sm-6 main_img" (click)="route_to_page('product-engineering')">
-          <div class="image-container">
-            <img src="assets/Images/Services_PE_L.webp" alt="Image">
-            <div class="overlay">
-              <p>Product Engineering</p>
-            </div>
-          </div>
-          <h4>Product Engineering</h4>
-        </div>
 
-        <div class="col-lg-3 col-sm-6 main_img" (click)="route_to_page('software-engineering')">
-          <div class="image-container">
-            <img src="assets/Images/Services_SE.webp" alt="Image">
-            <div class="overlay">
-              <p>Software Engineering</p>
-            </div>
-          </div>
-          <h4>Software Engineering</h4>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 main_img" (click)="route_to_page('digital-engineering')">
+        <div class="col-md-3 col-6 main_img" (click)="route_to_page('digital-engineering')">
           <div class="image-container">
             <img src="assets/Images/Services_DE.webp" alt="Image">
             <div class="overlay">
@@ -95,7 +66,27 @@
           <h4>Digital Engineering</h4>
         </div>
 
-        <div class="col-lg-3 col-sm-6 main_img" (click)="route_to_page('consulting')">
+        <div class="col-md-3 col-6 main_img" (click)="route_to_page('software-engineering')">
+          <div class="image-container">
+            <img src="assets/Images/Services_SE.webp" alt="Image">
+            <div class="overlay">
+              <p>Software Engineering</p>
+            </div>
+          </div>
+          <h4>Software Engineering</h4>
+        </div>
+
+        <div class="col-md-3 col-6 main_img" (click)="route_to_page('product-engineering')">
+          <div class="image-container">
+            <img src="assets/Images/Services_PE_L.webp" alt="Image">
+            <div class="overlay">
+              <p>Product Engineering</p>
+            </div>
+          </div>
+          <h4>Product Engineering</h4>
+        </div>
+
+        <div class="col-md-3 col-6 main_img" (click)="route_to_page('consulting')">
           <div class="image-container">
             <img src="assets/Images/Services_Consulting.webp" alt="Image">
             <div class="overlay">
@@ -110,52 +101,52 @@
     </div>
 
     <div class="col-12">
-      <div class="row industries_we_serve" style="padding: 25px;">
+      <div class="row industries_we_serve" style="padding: 15px;">
         <h3>Industries We Serve</h3>
 
-        <div class="col-md-3 col-sm-4 main_img">
+        <div class="col-md-3 col-4 main_img">
           <img src="assets/Images/industry1.JPG" alt="Image">
 
           <h4>Energy</h4>
         </div>
 
-        <div class="col-md-3 col-sm-4 main_img">
+        <div class="col-md-3 col-4 main_img">
           <img src="assets/Images/industry2.JPG" alt="Image">
 
           <h4>Aerospace & Defense </h4>
         </div>
 
-        <div class="col-md-3 col-sm-4 main_img">
+        <div class="col-md-3 col-4 main_img">
           <img src="assets/Images/industry3.JPG" alt="Image">
 
           <h4>Healthcare</h4>
         </div>
 
-        <div class="col-md-3 col-sm-4 main_img">
+        <div class="col-md-3 col-4 main_img">
           <img src="assets/Images/industry4.JPG" alt="Image">
 
           <h4>Automotive</h4>
         </div>
 
-        <div class="col-md-3 col-sm-4 main_img">
+        <div class="col-md-3 col-4 main_img">
           <img src="assets/Images/industry5.JPG" alt="Image">
 
           <h4>Telecom</h4>
         </div>
 
-        <div class="col-md-3 col-sm-4 main_img">
+        <div class="col-md-3 col-4 main_img">
           <img src="assets/Images/industry6.JPG" alt="Image">
 
           <h4>Banking & Finance</h4>
         </div>
 
-        <div class="col-md-3 col-sm-4 main_img">
+        <div class="col-md-3 col-4 main_img">
           <img src="assets/Images/industry7.JPG" alt="Image">
 
           <h4>Retail</h4>
         </div>
 
-        <div class="col-md-3 col-sm-4 main_img">
+        <div class="col-md-3 col-4 main_img">
           <img src="assets/Images/industry8.JPG" alt="Image">
 
           <h4>Consumer Goods</h4>

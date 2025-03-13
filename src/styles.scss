@@ -69,7 +69,7 @@ body {
     background-position: center;
     color: #002c66;
     height: 70vh;
-    padding-left: 30px;
+    padding: 2em !important;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -90,4 +90,89 @@ body {
         color: #FFFFFF;
         width: 80%;
     }
+
+    h2 {
+        font-weight: 600;
+        font-size: 2em;
+        letter-spacing: 0em;
+        line-height: 40px;
+        text-align: left;
+        color: whitesmoke;
+        text-shadow: 30px #262626;
+    }
+
+    .underline{
+        width: 47%;
+        margin: 10px 0;
+        margin-bottom: 14px;
+        border-bottom: 4px solid #e7d804;
+    }
+    
+    p {
+        
+        width: 90%;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 1.2em;
+        line-height: 1.3em;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffff;
+    }
+
+}
+
+/* <!-- LET'S TALK --> */
+
+.letstalk {
+    background: #3d87eb;
+
+    p {
+        font-weight: 500;
+        font-size: 1em;
+        color: #FFFFFF;
+    }
+
+    .ctnus {
+        background-color: #004aad;
+        cursor: pointer;
+       
+        &:hover {
+            background-color: #003b88;
+        }
+    }
+
+    a { 
+        padding: 5px;
+        color: white !important;
+        text-decoration: none;
+        font-size: 0.75em;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .letstalk {
+    
+        p {
+            font-size: 0.8em;
+        }
+    
+        .ctnus {
+            background-color: #004aad;
+            cursor: pointer;
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 0.6em;
+            }
+            &:hover {
+                background-color: #003b88;
+            }
+        }
+    
+       
+    }
+  
 }
