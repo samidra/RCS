@@ -74,29 +74,37 @@
         ul {
             display: flex;
             flex-direction: row;
-
+            align-items: center;
+            width: 75%;
+            position: relative;
+            padding-left: 7vmax;
             li {
-                padding-left: 2em;
-
+                padding-left: 1.5em;
+                top: 0;
                 a {
-                    font-size: 0.86em;
-                    font-weight: 600;
+                    font-size: 1em;
+                    font-weight: 500;
                     color: black;
                     cursor: pointer;
 
                     &:hover {
+                        font-weight: 600;
                         color: #003b88;
                     }
                 }
 
                 .contact_us {
-                    padding-right: 2em;
+                    font-size: 0.85em;
+                    font-weight: 500;
                     background-color: #004aad;
                     color: white;
                     text-decoration: none;
-                    padding: 10px;
-
+                    padding: 5px;
+                    position: absolute;
+                    right: 0;
+                    top: -3px;
                     &:hover {
+                        font-weight: 500;
                         background-color: #003b88;
                         color: white;
                     }
@@ -248,6 +256,19 @@
     }
 }
 
+@media screen and (max-width: 870px){
+    .navbar {
+        .container-fluid {
+    
+            ul {
+              
+                padding-left: 4vmax;
+    
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 815px) {
 
     .navbar {
@@ -277,7 +298,7 @@
 
 }
 
-@media only screen and (max-width: 627px) {
+@media only screen and (max-width: 670px) {
 
     .smallmenuicon {
         display: flex;
