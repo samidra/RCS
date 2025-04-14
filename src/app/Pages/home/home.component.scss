@@ -39,7 +39,7 @@ $background-color_1: rgb(226, 222, 222);
             }
 
             .underline{
-                width: 66%;
+                width: 69%;
                 margin: 10px 0;
                 margin-bottom: 20px;
                 border-bottom: 4px solid #d1c304;
@@ -313,14 +313,14 @@ $background-color_1: rgb(226, 222, 222);
 
         img{
             border-radius: 50%;
-            height: 90%;
-            width: 80%;
-            filter: blur(1px);
+            height: 80%;
+            width: 76%;
+            filter: blur(0.1px);
         }
         h4 {
             text-align: center;
             margin-top: 10px;
-            font-size: 0.85em;
+            font-size: 1em;
             font-weight: 500;
         }
     }

@@ -6,6 +6,10 @@
 
 .header{
     background-image: url("../../../assets/Images/Digital Engineering.webp");
+
+    .underline{
+        width: 25%;
+    }
 }
 
 .sub_topics {
@@ -16,7 +20,7 @@
 
         img {
             width: 100%;
-            height: 360px;
+            height: 420px;
             filter: drop-shadow(2px 2px 2px black);
         }
     }
@@ -46,14 +50,14 @@
         }
 
         ul {
-            padding-top: 5px;
+            padding-top: 3px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             padding-left: 50px;
 
             li {
-                padding: 8px 0pc;
+                padding: 6px 0pc;
                 list-style: disc;
                 font-size: 0.8em;
                 font-weight: 600;
