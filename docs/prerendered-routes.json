@@ -1,0 +1,13 @@
+{
+  "routes": {
+    "/RCS": {},
+    "/RCS/about-us": {},
+    "/RCS/career": {},
+    "/RCS/consulting": {},
+    "/RCS/contact": {},
+    "/RCS/digital-engineering": {},
+    "/RCS/industries": {},
+    "/RCS/product-engineering": {},
+    "/RCS/software-engineering": {}
+  }
+}
