@@ -1,7 +1,7 @@
 @import url('../digital-engineering/digital-engineering.component.scss');
 
 .header{
-    background-image: url("../../../assets/Images/Consulting_Page_Top.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../../assets/Images/Consulting_Page_Top.webp");
 
     .underline{
         width: 32%;

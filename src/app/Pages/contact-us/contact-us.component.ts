@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact-us',
@@ -13,7 +14,7 @@ export class ContactUsComponent {
 
   enquiry_form: any
 
-  constructor(private fb:FormBuilder){
+  constructor(private router: Router,private fb:FormBuilder){
     this.enquiry_form = this.fb.group({
       firstName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
       lastName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
@@ -59,4 +60,8 @@ export class ContactUsComponent {
     }
   }
   
+  route_to_page(page_name:any) {
+      this.router.navigate([page_name]);
+      window.scrollTo(0, 0);
+    }
 }

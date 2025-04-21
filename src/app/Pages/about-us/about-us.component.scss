@@ -5,7 +5,7 @@
 }
 
 .header {
-    background-image: url("../../../assets/Images/AboutUs.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../../assets/Images/AboutUs.webp");
 
     .underline{
         width: 30%;
@@ -39,8 +39,8 @@
         line-height: 26px;
         font-size: 1em;
         letter-spacing: 0px;
-        text-align: center;
-        width: 60%;
+        text-align: justify;
+        width: 90%;
     }
 
 }
@@ -66,8 +66,8 @@
         line-height: 26px;
         font-size: 1em;
         letter-spacing: 0px;
-        text-align: center;
-        width: 60%;
+        text-align: justify;
+        width: 90%;
     }
 
 }

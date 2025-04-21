@@ -1,10 +1,55 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 header">
-            <h2>Shape your future by starting <br>
-                your career with RCS</h2>
+            <!-- <h2>Build your future with us</h2>
             <div class="underline"></div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            <p>Shape your career and make a difference</p> -->
+        </div>
+    </div>
+
+    <div class="row whyuscont ">
+        <p>At RCS Engineering, we are more than just engineers and developers—we are innovators, problem solvers and dreamers. We believe in the power of technology to shape a better world, and we’re always looking for passionate individuals to join us on this journey.</p>
+        <h2>Why Work With Us?</h2>
+
+        <div class="col-12">
+            <div class="row whyus2 p-2">
+                <!-- -------------- -->
+                <div class="col-md-5 col-12 squarecontent">
+                    <div class="corner-element"></div>
+                    <h4>Work That Matters</h4>
+                    <p class="mb-4 p-2">
+                        We take on projects that are impactful, from scalable software solutions to cutting-edge engineering innovations. You’ll work on real-world challenges that make a difference. 
+                    </p>
+                </div>
+
+                <!-- --------------- -->
+                <div class="col-md-5 col-12 squarecontent">
+                    <div class="corner-element"></div>
+                    <h4>Collaborative Culture</h4>
+                    <p class="mb-4 p-2">
+                        We believe the best ideas come from collaboration. You’ll be part of a diverse and inclusive environment where your voice matters.
+                    </p>
+                </div>
+
+                 <!-- --------------- -->
+                 <div class="col-md-5 col-12 squarecontent">
+                    <div class="corner-element"></div>
+                    <h4>Career Growth</h4>
+                    <p class="mb-4 p-2">
+                        We invest in your professional development with mentorship programs, training and clear pathway for advancement.
+                    </p>
+                </div>
+
+                <!-- --------------- -->
+                <div class="col-md-5 col-12 squarecontent">
+                    <div class="corner-element"></div>
+                    <h4>Work-Life Balance</h4>
+                    <p class="mb-4 p-2">
+                        We believe in delivering excellence; without sacrificing your well-being. We promote a culture that help you maintain a healthy balance.
+                    </p>
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -16,10 +61,8 @@
             <div class="myunderline"></div>
 
             <p>
-                Don’t miss out the opportunity to work with a
-                team that is as committed to your success as you
-                are. Reach out to us today and let’s turn your career aspirations into reality.
-
+                Don’t miss out the opportunity to work with a team that is as committed to your success as you are.
+                Reach out to us at <a href="mailto:careers@rcsengg.com">careers&#64;rcsengg.com</a>  or fill the form.
             </p>
 
 
@@ -89,7 +132,7 @@
                         <input id="resume" type="file" formControlName="resume" (change)="onFileChange($event)" />
                         <div *ngIf="resume?.touched && resume?.hasError('required')" class="error">
                             Resume is required.
-                          </div>
+                        </div>
                     </div>
 
                     <button type="submit">Submit</button>
@@ -104,5 +147,5 @@
     </div>
 
     <hr>
-    
+
 </div>
