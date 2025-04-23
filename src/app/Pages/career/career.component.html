@@ -1,17 +1,20 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 header">
-            <!-- <h2>Build your future with us</h2>
+            <h2>Build your future with us</h2>
             <div class="underline"></div>
-            <p>Shape your career and make a difference</p> -->
+            <p>Shape your career and make a difference</p>
         </div>
     </div>
 
-    <div class="row whyuscont ">
-        <p>At RCS Engineering, we are more than just engineers and developers—we are innovators, problem solvers and dreamers. We believe in the power of technology to shape a better world, and we’re always looking for passionate individuals to join us on this journey.</p>
-        <h2>Why Work With Us?</h2>
 
-        <div class="col-12">
+
+    <div class="row">
+        <div class="col-12" style="display: flex; justify-content: center; padding: 30px;">
+            <p>At RCS Engineering, we are more than just engineers and developers—we are innovators, problem solvers and dreamers. We believe in the power of technology to shape a better world, and we’re always looking for passionate individuals to join us on this journey.</p>
+        </div>
+        <div class="col-12 whyuscont">
+            <h2>Why Work With Us?</h2>
             <div class="row whyus2 p-2">
                 <!-- -------------- -->
                 <div class="col-md-5 col-12 squarecontent">
@@ -51,6 +54,24 @@
 
             </div>
         </div>
+
+        <div class="col-11" style="display: flex; flex-direction: column; justify-content: center; padding: 30px;">
+            <h2>Join Our Team of Experts</h2>
+            <p>Whether you’re early in your career or a seasoned expert, we’re looking for passionate professionals across key areas like:</p>
+            <ul style="padding-left: 50px; line-height: 40px;">
+                <li>Software Development (Frontend, Backend, Full Stack)</li>
+                <li>Cloud & DevOps Engineering
+                </li>
+                <li>Quality Assurance & Testing</li>
+                <li>UI/UX Design</li>
+                <li>Project & Product Management</li>
+                <li>Data Science & Machine Learning</li>
+                <li>Embedded Systems & Hardware Engineering</li>
+                <li>Mechanical Design Engineering</li>
+                <li>Electrical Engineering</li>
+            </ul>
+        </div>
+
     </div>
 
     <div class="row part4">
@@ -73,7 +94,6 @@
                 <div class="row formside">
                     <div class="col-12 colheading_part1">
                         <h4>Apply Now</h4>
-                        <p>We’ll get back to you soon</p>
                     </div>
 
                     <div class="input_field col-md-6">
@@ -119,11 +139,11 @@
                     </div>
 
                     <div class="col-12 input_field">
-                        <label for="message_to">Position Applied For</label>
+                        <label for="message_to">Message</label>
                         <input type="text" formControlName="message" id="message_to"
                             placeholder="Write your message here...">
                         <div *ngIf="message?.invalid && message.touched" class="error">
-                            <small *ngIf="message?.errors?.['required']">Position is required.</small>
+                            <small *ngIf="message?.errors?.['required']">Message is required.</small>
                         </div>
                     </div>
 

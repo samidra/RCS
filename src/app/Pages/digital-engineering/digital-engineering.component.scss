@@ -8,37 +8,37 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../../assets/Images/Digital Engineering.webp");
 
     .underline {
-        width: 25%;
+        width: 36%;
     }
 }
 
 .sub_topics {
-    padding: 30px 0;
+    padding: 30px 30px;
 
     .img {
         
         display: flex;
         justify-content: center;
         img {
-            width: 90%;
-            height: 320px;
+            width: 95%;
+            height: 380px;
             filter: drop-shadow(2px 2px 2px black);
         }
     }
 
     .content_part {
-        padding: 10px;
+        padding: 10px 20px;
         display: flex;
         flex-direction: column;
 
-        .underline {
-            width: 45%;
-            border-bottom: 4px solid #004AAD;
-        }
+        // .underline {
+        //     width: 45%;
+        //     border-bottom: 4px solid #004AAD;
+        // }
 
         h4 {
             text-align: center;
-            border-bottom: 4px solid #004AAD;
+            // border-bottom: 4px solid #004AAD;
             color: #004AAD;
             padding-bottom: 5px;
             font-weight: 700;
@@ -46,10 +46,13 @@
         }
 
         p {
-            padding-left: 10px;
+            border-top: 4px solid #004AAD;
+            // padding-left: 10px;
             padding-top: 20px;
-            font-size: 0.85em;
+            font-size: 1em;
             font-weight: 500;
+            text-align: justify;
+            width: 99%;
         }
 
         ul {
@@ -62,14 +65,13 @@
             li {
                 padding: 6px 0pc;
                 list-style: disc;
-                font-size: 0.8em;
+                font-size: 1em;
                 font-weight: 600;
-                line-height: 10px;
+                line-height: 20px;
             }
         }
     }
 }
-
 
 @media (max-width: 1200px) {
     .sub_topics {

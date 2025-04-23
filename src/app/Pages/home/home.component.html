@@ -14,7 +14,7 @@
           <div class="carousel-item" data-bs-interval="2000" *ngFor="let image of images; let i = index"
             [class.active]="i === 0">
             <img [src]="image.path" [alt]="image.alt" style="width: 100%;" loading="lazy" />
-            <div class="carousel-caption">
+            <div class="carousel-caption" [ngClass]="image.heading === 'Success Factors' ? 'sucesswidth': image.heading === 'Sustainable Development'?'sustainwidth':''">
               <h2 [innerHTML]="image.heading"></h2>
               <div class="underline"></div>
               <p>{{ image.para }}</p>
@@ -28,27 +28,27 @@
     <div class="col-md-12 our_trusted_partner">
       <div class="content">
         <h3>Your Trusted Partner</h3>
-      <p>At RCS Engineering Services, we are dedicated to
-        provide innovative engineering solutions that
-        empower our clients to achieve their goals efficiently
-        and sustainably. With our diverse expertise and
-        commitment to excellence, we offer a
-        comprehensive range of engineering and software
-        services tailored to meet the unique needs of each
-        project.
-        <br>
-        Together, with our clients, industry partners and our
-        global team; we are committed to solve toughest
-        engineering problems and make world a better
-        place
-      </p>
+        <p>At RCS Engineering Services, we are dedicated to
+          provide innovative engineering solutions that
+          empower our clients to achieve their goals efficiently
+          and sustainably. With our diverse expertise and
+          commitment to excellence, we offer a
+          comprehensive range of engineering and software
+          services tailored to meet the unique needs of each
+          project.
+          <br>
+          Together, with our clients, industry partners and our
+          global team; we are committed to solve toughest
+          engineering problems and make world a better
+          place
+        </p>
 
-      <div class="btndiv">
-        <button class="button-55" align="right"> Read More</button>
+        <div class="btndiv">
+          <button class="button-55" align="right"> Read More</button>
+        </div>
+
       </div>
 
-      </div>
-    
     </div>
 
     <div class="col-12">
@@ -105,9 +105,9 @@
         <h3>Industries We Serve</h3>
 
         <div class="col-md-3 col-4 main_img">
-          <img src="assets/Images/Industrialhome.webp" alt="Image">
+          <img src="assets/Images/Energyhome.webp" alt="Image">
 
-          <h4>Indusrial</h4>
+          <h4>Energy</h4>
         </div>
 
         <div class="col-md-3 col-4 main_img">
@@ -129,15 +129,15 @@
         </div>
 
         <div class="col-md-3 col-4 main_img">
-          <img src="assets/Images/Hi-Techhome.webp" alt="Image">
+          <img src="assets/Images/Industrialhome.webp" alt="Image">
 
-          <h4>Telecom</h4>
+          <h4>Indusrial</h4>
         </div>
 
         <div class="col-md-3 col-4 main_img">
-          <img src="assets/Images/Energyhome.webp" alt="Image">
+          <img src="assets/Images/Hi-Techhome.webp" alt="Image">
 
-          <h4>Energy</h4>
+          <h4>Hi-Tech</h4>
         </div>
 
         <div class="col-md-3 col-4 main_img">
@@ -157,7 +157,7 @@
 
     <div class="col-12">
 
-      <div class="row part4">
+      <!-- <div class="row part4">
 
         <div class="col-lg-6 quality_product_div2">
 
@@ -243,6 +243,19 @@
 
         </div>
 
+      </div> -->
+
+      <div class="row">
+        <div class="col-12">
+          <div class="letstalk">
+            <div class="row">
+              <div class="col-md-12" style="display: flex; align-items: center; justify-content: space-around;">
+                <p>Have a project in mind? Schedule a free consultation today.</p>
+                <a (click)="route_to_page('contact')" class="ctnus">Let's Connect</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

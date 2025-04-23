@@ -75,14 +75,14 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            width: 75%;
+            width: 80%;
             position: relative;
-            padding-left: 7vmax;
+            // padding-left: 7vmax;
             li {
-                padding-left: 1.5em;
+                padding-left: 4em;
                 top: 0;
                 a {
-                    font-size: 1em;
+                    font-size: 1.1em;
                     font-weight: 500;
                     color: black;
                     cursor: pointer;
@@ -94,15 +94,15 @@
                 }
 
                 .contact_us {
-                    font-size: 0.85em;
+                    font-size: 1em;
                     font-weight: 500;
                     background-color: #004aad;
                     color: white;
                     text-decoration: none;
-                    padding: 5px;
+                    padding: 9px;
                     position: absolute;
                     right: 0;
-                    top: -3px;
+                    top: -6px;
                     &:hover {
                         font-weight: 500;
                         background-color: #003b88;
@@ -146,7 +146,7 @@
                             display: flex;
                             justify-content: space-between;
                             padding: 5px;
-                            font-size: 0.75em;
+                            font-size: 0.85em;
                         }
                     }
 
@@ -185,7 +185,7 @@
                                 padding: 5px;
                                 text-decoration: none;
                                 color: #333;
-                                font-size: 0.7em;
+                                font-size: 0.8em;
                             }
                         }
                     }
@@ -256,14 +256,12 @@
     }
 }
 
-@media screen and (max-width: 870px){
+@media screen and (max-width: 1112px){
     .navbar {
         .container-fluid {
     
             ul {
-              
-                padding-left: 4vmax;
-    
+                width: 90%;
             }
         }
     }
@@ -298,7 +296,7 @@
 
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 923px) {
 
     .smallmenuicon {
         display: flex;
@@ -372,28 +370,24 @@
         height: 100px;
         filter: drop-shadow(2px 4px 6px black);
     }
-    .newletterfoot {
 
-        p {
-            width: 90%;
-            font-size: 0.8em;
-            font-weight: 500;
-            line-height: 27.82px;
-            text-align: justify;
-            word-spacing: 0.1em;
-            color: #ffff;
+    .logo_img{
+        display: flex;
+        h5{
+            padding: 6px 15px;
+            color: white;
+            font-weight: 300;
+            font-size: 1.5em;
+            letter-spacing: 1px;
+            font-style: italic;
+            line-height: 1.5em;
         }
-
-        form {
-            display: flex;
-        }
-
     }
 
     .cateG {
 
         .categoryfoot1 {
-            font-size: 14px;
+            font-size: 1.1em;
             font-weight: 600;
             line-height: 30px;
             letter-spacing: 0em;
@@ -403,9 +397,10 @@
         }
 
         a {
-            font-size: 0.74em;
-            font-weight: 500;
+            font-size: 1em;
+            font-weight: 400;
             letter-spacing: 0em;
+            line-height: 2.3em;
             text-align: left;
             color: white;
             cursor: pointer;
@@ -451,9 +446,10 @@
             }
         }
 
-        font-size: 12px;
-        font-weight: 600;
-        line-height: 21px;
+        font-size: 1em;
+        font-weight: 400;
+        letter-spacing: 0em;
+        line-height: 2.3em;
         letter-spacing: 0em;
         text-align: left;
         color: white;
@@ -465,7 +461,7 @@
 
     .contactfoot {
 
-        font-size: 17px;
+        font-size: 1.1em;
         font-weight: 600;
         line-height: 30px;
         letter-spacing: 0em;
@@ -484,9 +480,10 @@
 
     h5 {
 
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 600;
-        line-height: 18.54px;
+        line-height: 30px;
+        letter-spacing: 0em;
         text-align: left;
         color: #000000;
     }

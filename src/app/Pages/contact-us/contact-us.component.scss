@@ -6,16 +6,26 @@
 
 .header{
     // background-image: url("../../../assets/Images/contact_banner.png");
-    background-image: url("../../../assets/Images/contactDemo.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../../assets/Images/Contact Us.webp");
     .underline{
-        width: 40%;
+        width: 38%;
     }
 }
-
 
 .part4 {
     margin-top: 40px;
     border-top: 1px solid rgb(212, 212, 212);
+
+    p {
+        font-weight: 400;
+        margin-top: 16px;
+        font-size: 1.35em;
+        text-align: center;
+        color: #000000;
+        width: 90%;
+        text-align: justify;
+        padding-bottom: 20px;
+    }
 
     .quality_product_div2 {
         display: flex;
@@ -23,24 +33,16 @@
         align-items: center;
         flex-direction: column;
         font-weight: 700;
-        h4{
-            font-size: 1.2em;
-            text-align: left;
-            color: #003b88;
-        }
-
-        .myunderline {
-            border: 1px solid #003b88;
-            width: 45%;
-            margin-top: 10px;
-        }
 
         p{
-            margin-top: 20px;
-            font-weight: 500;
-            width: 70%;
-            text-align: center;
-            font-size: 14px;
+            font-weight: 400;
+        margin-top: 16px;
+        font-size: 1.35em;
+        text-align: center;
+        color: #000000;
+        width: 90%;
+        text-align: justify;
+        padding-bottom: 20px;
         }
 
         button {
@@ -48,6 +50,7 @@
             color: white;
             text-decoration: none;
             padding: 8px;
+            font-size: 1.3em;
             margin-top: 20px;
             border: none;
             font-weight: 500;
@@ -61,8 +64,8 @@
 
     .formside{
         box-shadow: 0px 0px 10px 10px #00000040;
-        
         padding: 20px;
+        background-color: white;
         .error{
             color: red;
             font-size: 14px;
@@ -113,65 +116,35 @@
 
 /* CONTACT AND MAP */
 
-.contactandmap h3 {
-    margin-top: 30px;
-    font-weight: 00;
-    font-size: 7vmin;
-    line-height: 48px;
-    color: #003b88;
-}
-
-.contactandmap h5 {
-    font-weight: 500;
-    font-size: 1.2em;
-    line-height: 25px;
-    color: #000000;
-    margin: 0;
-}
-
-
-.addinfo {
+.contactandmap{
     display: flex;
+    align-items: center;
     flex-direction: column;
-}
-
-.addinfo h3 {
-    font-weight: 700;
-    font-size: 5vmin;
-    line-height: 38px;
-    color: #000000;
-}
-
-.loca2{
-    p, a {
-        margin-top: 3px;
-        color: #004aad;
-        font-size: 0.8em;
-        font-weight: 500;
-        margin-left: 35px;
+    h3 {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 3em;
+        line-height: 48px;
+        color: #ffffff;
     }
-}
+
+    p {
+        font-weight: 400;
+        margin-top: 16px;
+        font-size: 1.35em;
+        text-align: center;
+        color: #ffffff;
+        width:100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+} 
+
 
 @media (min-width: 280px) and (max-width: 767px) {
 
     .startcoversation p {
         font-family: 'Inter';
-        font-size: 2.5vmax;
-    }
-
-    .addimg {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .loca2 p {
-        margin-top: 3px;
-        margin-left: 0.7vw;
-        color: #003b88;
-        font-size: 5vmin;
-    }
-
-    .contactandmap h5 {
         font-size: 2.5vmax;
     }
 

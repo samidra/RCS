@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg" [ngClass]="{'fixed': isScrolled}">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="assets/Carousel/rcs logo final.svg" alt="" srcset="">
+      <img src="assets/Carousel/Logo_trial_1.jpg" alt="" srcset="">
     </a>
 
     <i class="bi bi-list smallmenuicon" (click)="toggleNav()"></i>
@@ -58,8 +58,36 @@
         </ul>
       </li>
 
-      <li>
-        <a (click)="route_to_page('industries')">Industries</a>
+      <li class="dropdown">
+        <a class="dropdown-toggle">Industries</a>
+        <ul class="dropdown-menu">
+          <li class="submenu">
+            <a (click)="route_to_page('industries')">Energy</a>
+          </li>
+          <li class="submenu">
+            <a (click)="route_to_page('industries')">Aerospace & Defense</a>
+          </li>
+          <li class="submenu">
+            <a (click)="route_to_page('industries')">Healthcare</a>
+          </li>
+          <li class="submenu">
+            <a (click)="route_to_page('industries')">Automotive</a>
+          </li>
+          <li class="submenu">
+            <a (click)="route_to_page('industries')">Indusrial</a>
+          </li>
+          <li class="submenu">
+            <a (click)="route_to_page('industries')">Hi-Tech</a>
+          </li>
+          <li class="submenu">
+            <a (click)="route_to_page('industries')">Retail</a>
+          </li>
+          <li class="submenu">
+            <a (click)="route_to_page('industries')">Consumer Goods</a>
+          </li>
+
+
+        </ul>
       </li>
       <li>
         <a (click)="route_to_page('career')">Career</a>
@@ -104,20 +132,15 @@
 
 <div class="container-fluid footer_scss footcont">
   <div class="row">
-    <div class="col-12">
-      <img src="assets/Carousel/rcs logo final.svg" class="log_img" alt="" srcset="">
-    </div>
-    <div class="col-lg-4 about_rcs mt-3">
-      <div class="newletterfoot">
-        <p>
-          At RCS Engineering, we are driven by a passion for transforming ideas into innovative solutions. Founded with a vision to bridge the gap between cutting-edge engineering and advanced digital technologies, our journey has been one of constant evolution and relentless commitment to excellence.
-        </p>
-      </div>
- 
+    <div class="col-lg-4 mt-3 logo_img">
+      <img src="assets/Carousel/Logo_trial_1.jpg" class="log_img" alt="" srcset="">
+      <h5>Accelerating Innovation
+        <br>
+        Delivering Impact</h5>
     </div>
 
 
-    <div class="col-lg-1 col-6 mt-3">
+    <div class="col-lg-1 col-6 mt-3 ">
       <div class="cateG">
         <ul>
           <li class="categoryfoot">
@@ -186,7 +209,7 @@
       </div>
     </div>
 
-    <div class="col-lg-3 mt-3">
+    <div class="col-lg-3 mt-3 px-5">
 
       <div class="addressfoot">
 
@@ -218,7 +241,7 @@
       </div>
     </div>
     <div class="col-12 mt-5 copy_right">
-      <span>COPYRIGHT &copy; 2024 RCS ENGINEERING SERVICES PVT LTD | All Right Reserved</span>
+      <span>COPYRIGHT &copy; 2025 RCS ENGINEERING SERVICES PVT LTD | All Right Reserved</span>
     </div>
   </div>
 </div>

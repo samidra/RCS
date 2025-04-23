@@ -26,10 +26,10 @@ export class HomeComponent {
       alt: 'Success Factors',
     },
     {
-      heading: 'Striving for Better Tomorrow',
+      heading: 'Sustainable Development',
       path: 'assets/Carousel/slide 33.webp',
-      para: 'Reimagining Future through Innovation',
-      alt: 'Striving for Better Tomorrow',
+      para: 'Striving for Better Tomorrow',
+      alt: 'Sustainable Development',
     },
     
   ];
