@@ -296,7 +296,7 @@
 
 }
 
-@media only screen and (max-width: 923px) {
+@media only screen and (max-width: 944px) {
 
     .smallmenuicon {
         display: flex;
@@ -349,6 +349,44 @@
             }
         }
 
+        .dropdown {
+            position: relative;
+
+            a {
+                text-decoration: none;
+            }
+
+            /* Hide the dropdown menu by default */
+            .dropdown-menu {
+                display: none;
+                position: absolute;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                border-radius: 0px;
+                background-color: #fff;
+                border: none;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                width: 200px;
+
+                li {
+                    padding: 3px 0px;
+                    position: relative;
+
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 5px;
+                        font-size: 0.85em;
+                    }
+                }
+
+            }
+
+        }
+
     }
 
 }
@@ -374,13 +412,13 @@
     .logo_img{
         display: flex;
         h5{
-            padding: 6px 15px;
+            padding: 6px;
             color: white;
             font-weight: 300;
             font-size: 1.5em;
             letter-spacing: 1px;
             font-style: italic;
-            line-height: 1.5em;
+            line-height: 1em;
         }
     }
 
@@ -517,6 +555,54 @@
     line-height: 18.54px;
     text-align: center;
     color: white;
+}
+
+@media only screen and (max-width: 1223px) {
+
+    .footcont{
+
+        .logo_img{
+            display: flex;
+            h5{
+                padding: 6px;
+                color: white;
+                font-weight: 400;
+                font-size: 1em;
+                letter-spacing: 1px;
+                font-style: italic;
+                line-height: 1em;
+            }
+        }
+
+        .cateG {
+
+            .categoryfoot1 {
+                font-size: 0.9em;
+            }
+    
+            a {
+                font-size: 0.85em;
+            }
+    
+        }
+    
+        .addressfoot1 {
+            font-size: 0.85em;
+        }
+    
+        .contactfoot {
+    
+            font-size: 0.95em;
+            font-weight: 600;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+            list-style: none;
+            color: #000000;
+        }
+
+    }
+    
 }
 
 @media (min-width:375px) and (max-width:991px) {

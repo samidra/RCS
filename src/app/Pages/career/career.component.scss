@@ -5,9 +5,9 @@
 }
 
 .header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../../assets/Images/Careers.webp");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(85, 84, 84, 0.233), rgba(255, 255, 255, 0)),url("../../../assets/Images/Careers.webp");
     .underline{
-        width: 31%;
+        width: 410px;
     }
 
     p{
@@ -17,7 +17,7 @@
 }
 
 p {
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 16px;
     font-size: 1.35em;
     text-align: center;
@@ -89,7 +89,8 @@ p {
 
 .part4 {
     border-top: 1px solid rgb(212, 212, 212);
-
+    background-color: #00193a;
+    margin-bottom: 100px;
     .quality_product_div2 {
         display: flex;
         justify-content: center;
@@ -99,12 +100,12 @@ p {
         h4{
             font-size: 1.2em;
             text-align: left;
-            color: #003b88;
+            color: #ffffff;
         }
 
         .myunderline {
-            border: 1px solid #003b88;
-            width: 45%;
+            border: 1px solid #ffffff;
+            width: 15%;
             margin-top: 10px;
         }
 
@@ -114,13 +115,14 @@ p {
             width: 80%;
             text-align: justify;
             font-size: 1.2em;
+            color: white;
         }
 
     }
 
     .formside{
         box-shadow: 0px 0px 10px 10px #00000040;
-        
+        background-color: white;
         padding: 20px;
         .error{
             color: red;
@@ -170,25 +172,119 @@ p {
     }
 }
 
+ul{
+    padding-left: 50px; 
+    line-height: 40px; 
+    column-count: 2; 
+    column-gap: 50px;
+    li{
+
+        font-weight: 500;
+        &:hover{
+            font-weight: 600;
+        }
+    }
+}
+
 @media (min-width: 280px) and (max-width: 767px) {
 
-    .startcoversation p {
-        font-family: 'Inter';
-        font-size: 2.5vmax;
+    p {
+        font-size: 1em;
+        width: 97%;
     }
-
-    .addimg {
-        display: flex;
-        flex-direction: column-reverse;
+    
+    .whyuscont {
+        h2 {
+            font-size: 2em;
+        }
     }
-
-    .loca2 p {
-        margin-top: 3px;
-        margin-left: 0.7vw;
-        color: #003b88;
-        font-size: 5vmin;
+    
+    .part4 {
+      
+        .quality_product_div2 {
+            h4{
+                margin-top: 20px;
+                font-size: 1.2em;
+                text-align: left;
+                color: #ffffff;
+            }
+    
+            .myunderline {
+                border: 1px solid #ffffff;
+                width: 15%;
+                margin-top: 10px;
+            }
+    
+            p{
+                width: 97%;
+                font-size: 1em;
+            }
+    
+        }
+    
+        .formside{
+            box-shadow: 0px 0px 10px 10px #00000040;
+            background-color: white;
+            padding: 20px;
+            .error{
+                color: red;
+                font-size: 14px;
+                font-weight: 600;
+            }
+    
+            .input_field{
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+    
+                label{
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #000000;
+                }
+    
+                input{
+                    border: none;
+                    margin-top: 5px;
+                    border-bottom: 1px solid #0000001A;
+                }
+    
+                textarea{
+                    margin-top: 5px;
+                    border: 1px solid #0000001A;
+                }
+    
+               
+            }
+    
+            button {
+                background-color: #004AAD;
+                color: white;
+                text-decoration: none;
+                padding: 8px;
+                margin-top: 20px;
+                border: none;
+                font-weight: 500;
+    
+                &:hover{
+                    background-color: #003b88;
+                }
+            }
+        }
     }
-
    
 
+    ul{
+        line-height: 30px !important; 
+        column-count: 1 !important; 
+        padding-left: 20px !important;
+        li{
+            font-size: 0.94em;
+            &:hover{
+                font-weight: 600;
+            }
+        }
+    }
 }
+

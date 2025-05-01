@@ -32,5 +32,9 @@ export class HeaderFooterComponent {
   route_to_page(page_name:any) {
     this.router.navigate([page_name]);
     window.scrollTo(0, 0);
+
+    if(this.show_small_menu){
+      this.show_small_menu = false
+    }
   }
 }

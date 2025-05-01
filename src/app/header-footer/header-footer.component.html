@@ -90,7 +90,7 @@
         </ul>
       </li>
       <li>
-        <a (click)="route_to_page('career')">Career</a>
+        <a (click)="route_to_page('career')">Careers</a>
       </li>
       <li>
         <a class="contact_us" (click)="route_to_page('contact')">
@@ -108,15 +108,35 @@
     <li>
       <a (click)="route_to_page('about-us')">About Us</a>
     </li>
-    <li>
+    <!-- <li>
       <a (click)="route_to_page('newarrivals')">Our Services</a>
+    </li> -->
+
+    <li class="dropdown">
+      <a class="dropdown-toggle">Our Services</a>
+      <ul class="dropdown-menu">
+        <li class="submenu">
+          <a (click)="route_to_page('digital-engineering')">Digital Engineering </a>
+        </li>
+        <li class="submenu">
+          <a (click)="route_to_page('software-engineering')">Software Engineering </a>
+         
+        </li>
+        <li class="submenu">
+          <a (click)="route_to_page('product-engineering')">Product Engineering </a>
+        </li>
+        <li class="submenu">
+          <a (click)="route_to_page('consulting')">Consulting</a>
+        </li>
+
+      </ul>
     </li>
 
     <li>
       <a (click)="route_to_page('industries')">Industries</a>
     </li>
     <li>
-      <a (click)="route_to_page('career')">Career</a>
+      <a (click)="route_to_page('career')">Careers</a>
     </li>
     <li>
       <a class="contact_us" (click)="route_to_page('contact')">
@@ -134,9 +154,10 @@
   <div class="row">
     <div class="col-lg-4 mt-3 logo_img">
       <img src="assets/Carousel/Logo_trial_1.jpg" class="log_img" alt="" srcset="">
-      <h5>Accelerating Innovation
-        <br>
-        Delivering Impact</h5>
+      <div class="p-3">
+        <h5>Accelerating Innovation </h5>
+         <h5 style="border: none;"> Delivering Impact</h5>
+      </div>
     </div>
 
 
@@ -154,7 +175,7 @@
             <a (click)="route_to_page('about-us')">About Us</a>
           </li>
           <li>
-            <a (click)="route_to_page('career')">Career</a>
+            <a (click)="route_to_page('career')">Careers</a>
           </li>
           <li>
             <a (click)="route_to_page('contact')">Contact Us</a>
@@ -209,7 +230,7 @@
       </div>
     </div>
 
-    <div class="col-lg-3 mt-3 px-5">
+    <div class="col-lg-3 col-sm-6 mt-3">
 
       <div class="addressfoot">
 
@@ -233,9 +254,9 @@
       <div class="all_icon mt-2">
 
         <a><img src="assets/Footer/facebook.png" alt="facebook"></a>
-        <a><img src="assets/Footer/instagram.png" alt="instagram"></a>
+        <!-- <a><img src="assets/Footer/instagram.png" alt="instagram"></a> -->
         <a><img src="assets/Footer/linkedin.png" alt="linkedin"></a>
-        <a><img src="assets/Footer/youtube.png" alt="youtube"></a>
+        <!-- <a><img src="assets/Footer/youtube.png" alt="youtube"></a> -->
         <a><img src="assets/Footer/x.com.png" alt="twitter"></a>
 
       </div>

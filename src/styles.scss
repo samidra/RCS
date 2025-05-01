@@ -94,13 +94,6 @@
         margin-bottom: 0.7em;
     }
 
-    p {
-        font-weight: 400;
-        font-size: 1.2em;
-        line-height: 1.6;
-        color: #FFFFFF;
-        width: 80%;
-    }
 
     h2 {
         font-weight: 600;
@@ -110,10 +103,11 @@
         text-align: left;
         color: whitesmoke;
         text-shadow: 30px #262626;
+
     }
 
     .underline {
-        // width: 47%;
+       
         margin: 10px 0;
         margin-bottom: 14px;
         border-bottom: 4px solid #e7d804;
@@ -139,12 +133,15 @@
     background: #003b88;
     margin: 100px 0 !important;
     padding: 30px 0 !important;
-
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
     p {
         font-weight: 400;
         font-size: 1.9em;
         color: #FFFFFF;
         margin: 0 !important;
+        padding: 2px;
     }
 
     .ctnus {
@@ -153,9 +150,10 @@
 
         &:hover {
             background-color: #a4c7f5;
-            a{
+
+            a {
                 color: #ffffff;
-            } 
+            }
         }
     }
 
@@ -167,7 +165,7 @@
         font-weight: 600;
         letter-spacing: 2px;
         box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2509803922);
-        border-radius: 6px;
+        border-radius: 3px;
         text-transform: capitalize !important;
     }
 
@@ -177,36 +175,35 @@
 
     .letstalk {
         padding: 10px 0 !important;
-    
+
         p {
-         font-size: 1.3em;
+            font-size: 1.3em;
         }
 
         a {
             padding: 6px;
             font-size: 1em;
         }
-    
-    }
-    
-}
 
+    }
+
+}
 
 @media (max-width: 768px) {
 
 
     .letstalk {
         padding: 10px 0 !important;
-    
+
         p {
-         font-size: 1em;
+            font-size: 1em;
         }
 
         a {
             padding: 6px;
             font-size: 1em;
         }
-    
+
     }
 
     .header {
@@ -221,16 +218,46 @@
         display: flex;
         flex-direction: column;
         padding: 10px 0 !important;
-    
+
         p {
-         font-size: 0.95em;
+            font-size: 0.85em;
+            // width: 95%;
+            text-align: center;
         }
 
         a {
+            margin-top: 10px;
             padding: 6px;
             font-size: 0.7em;
+            letter-spacing: 0;
         }
-    
+
     }
 
+}
+
+@media (max-width: 500px) {
+
+    .header {
+        padding: 0.7em !important;
+        padding-top: 0 !important;
+        height: 60vh !important;
+        h1 {
+            font-size: 1.5em;
+            line-height: 1.1em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            line-height: 1.1em;
+        }
+        .underline {
+            width: 90% !important;
+        }
+
+        p {
+            width: 97%;
+            font-size: 1.1em;
+        }
+    }
 }

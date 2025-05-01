@@ -6,9 +6,9 @@
 
 .header{
     // background-image: url("../../../assets/Images/contact_banner.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../../assets/Images/Contact Us.webp");
+    background-image: url("../../../assets/Images/Contact Us.webp");
     .underline{
-        width: 38%;
+        width: 490px;
     }
 }
 
@@ -17,7 +17,7 @@
     border-top: 1px solid rgb(212, 212, 212);
 
     p {
-        font-weight: 400;
+        font-weight: 500;
         margin-top: 16px;
         font-size: 1.35em;
         text-align: center;
@@ -54,7 +54,7 @@
             margin-top: 20px;
             border: none;
             font-weight: 500;
-            box-shadow: 0px 0px 10px 10px #00000040;
+            // box-shadow: 0px 0px 10px 10px #00000040;
             &:hover{
                 background-color: #003b88;
             }
@@ -143,9 +143,43 @@
 
 @media (min-width: 280px) and (max-width: 767px) {
 
-    .startcoversation p {
-        font-family: 'Inter';
-        font-size: 2.5vmax;
+    .header{
+        .underline{
+            width: 410px;
+        }
     }
+    
+.part4 {
+
+    p {
+        font-size: 1em;
+        width: 96%;
+    }
+
+    .quality_product_div2 {
+        p{
+        font-size: 1em;
+        width: 97%;
+        }
+
+        button {
+            font-size: 1em;
+        }
+
+    }
+}
+
+/* CONTACT AND MAP */
+
+.contactandmap{
+    h3 {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+} 
+
 
 }

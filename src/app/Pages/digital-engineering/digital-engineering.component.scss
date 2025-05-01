@@ -5,10 +5,10 @@
 }
 
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../../assets/Images/Digital Engineering.webp");
+    background-image: url("../../../assets/Images/Digital Engineering.webp");
 
     .underline {
-        width: 36%;
+        width: 470px;
     }
 }
 
@@ -91,7 +91,6 @@
 
             p {
                 padding-left: 0px;
-                text-align: center;
                 font-size: 0.7em;
                 font-weight: 700;
             }
@@ -127,6 +126,7 @@
     }
 
     .sub_topics {
+        padding: 10px 0px;
         border-bottom: 3px solid #272727;
         .img {
             img {
