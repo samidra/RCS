@@ -385,6 +385,24 @@
 
             }
 
+            /* Show dropdown menu and highlight on hover */
+            &:hover {
+                .dropdown-menu {
+                    display: block;
+
+                    &:hover {
+                        li {
+                            a {
+                                &:hover {
+                                    background-color: #f1f1f1;
+                                    color: #003b88;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
         }
 
     }
