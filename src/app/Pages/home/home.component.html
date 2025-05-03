@@ -1,20 +1,25 @@
 <div class="conatiner-fluid">
   <div class="row">
     <div class="col-12 main_banner">
-      <div id="carouselExample" class="carousel slide  carousel-fade" data-bs-ride="carousel">
+      <div id="carouselExample" class="carousel slide custom-slide-speed" 
+      data-bs-ride="carousel" data-bs-interval="2000">
 
+        <!-- Indicators -->
         <div class="carousel-indicators">
           <button type="button" *ngFor="let image of images; let i = index" data-bs-target="#carouselExample"
             [attr.data-bs-slide-to]="i" [class.active]="i === 0" [attr.aria-current]="i === 0 ? 'true' : null"
-            [attr.aria-label]="'Slide' + (i + 1)"></button>
+            [attr.aria-label]="'Slide ' + (i + 1)">
+          </button>
         </div>
 
-
+        <!-- Carousel Items -->
         <div class="carousel-inner">
-          <div class="carousel-item" data-bs-interval="2000" *ngFor="let image of images; let i = index"
-            [class.active]="i === 0">
-            <img [src]="image.path" [alt]="image.alt" style="width: 100%;" loading="lazy" />
-            <div class="carousel-caption" [ngClass]="image.heading === 'Success Factors' ? 'sucesswidth': image.heading === 'Sustainable Development'?'sustainwidth':''">
+          <div *ngFor="let image of images; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
+            <img [src]="image.path" [alt]="image.alt" class="d-block w-100" loading="lazy" />
+            <div class="carousel-caption" [ngClass]="{
+                'sucesswidth': image.heading === 'Success Factors',
+                'sustainwidth': image.heading === 'Sustainable Development'
+              }">
               <h2 [innerHTML]="image.heading"></h2>
               <div class="underline"></div>
               <p>{{ image.para }}</p>
@@ -24,6 +29,7 @@
 
       </div>
     </div>
+
 
     <div class="res_div">
       <div class="col-xl-6 our_trusted_partner">
@@ -45,15 +51,15 @@
         </p>
 
         <div class="btndiv">
-          <button class="button-55" align="right"> Read More</button>
+          <button (click)="route_to_page('about-us')" class="button-55" align="right"> Read More</button>
         </div>
-  
+
       </div>
       <div class="col-xl-6 our_trusted_partner">
         <img src="assets/Images/Trusted-Partner.webp" alt="" srcset="" width="100%">
       </div>
     </div>
-    
+
     <div class="col-12">
       <div class="row services_we_offer">
         <h3>Services We Offer</h3>
@@ -107,49 +113,49 @@
       <div class="row industries_we_serve" style="padding: 15px;">
         <h3>Industries We Serve</h3>
 
-        <div class="col-lg-3 col-md-4 col-6 main_img">
+        <div class="col-lg-3 col-md-4 col-6 main_img" (click)="route_to_page('industries')">
           <img src="assets/Images/Energyhome.webp" alt="Image">
 
           <h4>Energy</h4>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-6 main_img">
+        <div class="col-lg-3 col-md-4 col-6 main_img" (click)="route_to_page('industries')">
           <img src="assets/Images/Aerospacehome.webp" alt="Image">
 
           <h4>Aerospace & Defense </h4>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-6 main_img">
+        <div class="col-lg-3 col-md-4 col-6 main_img" (click)="route_to_page('industries')">
           <img src="assets/Images/Healthcarehome.webp" alt="Image">
 
           <h4>Healthcare</h4>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-6 main_img">
+        <div class="col-lg-3 col-md-4 col-6 main_img" (click)="route_to_page('industries')">
           <img src="assets/Images/Automotivehome.webp" alt="Image">
 
           <h4>Automotive</h4>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-6 main_img">
+        <div class="col-lg-3 col-md-4 col-6 main_img" (click)="route_to_page('industries')">
           <img src="assets/Images/Industrialhome.webp" alt="Image">
 
           <h4>Indusrial</h4>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-6 main_img">
+        <div class="col-lg-3 col-md-4 col-6 main_img" (click)="route_to_page('industries')">
           <img src="assets/Images/Hi-Techhome.webp" alt="Image">
 
           <h4>Hi-Tech</h4>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-6 main_img">
+        <div class="col-lg-3 col-md-4 col-6 main_img" (click)="route_to_page('industries')">
           <img src="assets/Images/Retailhome.webp" alt="Image">
 
           <h4>Retail</h4>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-6 main_img">
+        <div class="col-lg-3 col-md-4 col-6 main_img" (click)="route_to_page('industries')">
           <img src="assets/Images/Consumer-Goodshome.webp" alt="Image">
 
           <h4>Consumer Goods</h4>

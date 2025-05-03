@@ -37,4 +37,8 @@ export class HeaderFooterComponent {
       this.show_small_menu = false
     }
   }
+
+  scroll_top(){
+    window.scrollTo(0, 0);
+  }
 }
