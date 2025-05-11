@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact-us',
-  imports: [CommonModule,ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.scss'
 })
@@ -14,7 +15,9 @@ export class ContactUsComponent {
 
   enquiry_form: any
 
-  constructor(private router: Router,private fb:FormBuilder){
+  constructor(private router: Router, private fb: FormBuilder, private title: Title) {
+    this.title.setTitle('RCS Engineering | Contact Us')
+
     this.enquiry_form = this.fb.group({
       firstName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
       lastName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
@@ -25,7 +28,7 @@ export class ContactUsComponent {
 
   }
 
-  get firstName(){
+  get firstName() {
     return this.enquiry_form.get('firstName');
   }
 
@@ -54,14 +57,14 @@ export class ContactUsComponent {
         phone: this.phone.value
       }
       console.log('Form Submitted!', body);
-      
+
     } else {
       this.enquiry_form.markAllAsTouched(); // Marks all fields to show validation errors
     }
   }
-  
-  route_to_page(page_name:any) {
-      this.router.navigate([page_name]);
-      window.scrollTo(0, 0);
-    }
+
+  route_to_page(page_name: any) {
+    this.router.navigate([page_name]);
+    window.scrollTo(0, 0);
+  }
 }

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -13,7 +13,16 @@ export class HeaderFooterComponent {
 
   isScrolled = false;
   enquiry_form: any
+  @ViewChild('smallMenu') smallMenu!: ElementRef;
+
   constructor(private router: Router,){  }
+
+ @HostListener('document:click', ['$event'])
+  handleClickOutside(event: Event) {
+    if (this.show_small_menu && this.smallMenu && !this.smallMenu.nativeElement.contains(event.target)) {
+      this.show_small_menu = false;
+    }
+  }
 
   show_small_menu = false
   toggleNav() {

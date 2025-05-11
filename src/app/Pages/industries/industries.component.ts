@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,10 +10,12 @@ import { Router } from '@angular/router';
 })
 export class IndustriesComponent {
 
-    constructor(private router: Router,) { }
-    route_to_page(page_name: any) {
-      this.router.navigate([page_name]);
-      window.scrollTo(0, 0);
-    }
-    
+  constructor(private router: Router, private title: Title) {
+    this.title.setTitle('RCS Engineering | Industries')
+  }
+  route_to_page(page_name: any) {
+    this.router.navigate([page_name]);
+    window.scrollTo(0, 0);
+  }
+
 }

@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-career',
   imports: [CommonModule,ReactiveFormsModule],
@@ -11,7 +12,7 @@ import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 export class CareerComponent {
   career_form: any
 
-  constructor(private fb:FormBuilder){
+  constructor(private fb:FormBuilder, private title :Title){
     this.career_form = this.fb.group({
       firstName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
       lastName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
@@ -21,6 +22,7 @@ export class CareerComponent {
       resume: [null, [Validators.required]]
     }) as FormGroup
 
+    this.title.setTitle('RCS Engineering | Careers')
   }
 
   get firstName(){

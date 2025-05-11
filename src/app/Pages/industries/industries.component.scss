@@ -68,3 +68,50 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+
+    .header {
+        padding-left: 10px !important;
+
+        h1 {
+            width: 98%;
+            font-size: 2.1em;
+            font-weight: 600;
+        }
+    }
+
+    .sub_topics_re {
+        display: flex;
+        flex-direction: column-reverse;
+        border-bottom: 3px solid #272727;
+    }
+
+    .sub_topics {
+        padding: 10px 0px;
+        border-bottom: 3px solid #272727;
+        .img {
+            img {
+                height: 250px !important;
+            }
+        }
+        .content_part {
+            justify-content: flex-start;
+
+            p {
+                font-size: 0.8em;
+                font-weight: 600;
+            }
+
+            ul {
+                padding-left: 40px !important;
+
+                li {
+                    font-size: 0.8em !important;
+                    font-weight: 500 !important;
+                }
+            }
+        }
+    }
+
+}
