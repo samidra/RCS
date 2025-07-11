@@ -14,8 +14,15 @@
 
         <!-- Carousel Items -->
         <div class="carousel-inner">
-          <div *ngFor="let image of images; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
-            <img [src]="image.path" [alt]="image.alt" class="d-block w-100" loading="lazy" />
+          <div *ngFor="let image of images; let i = index; trackBy: trackByFn" class="carousel-item" [ngClass]="{'active': i === 0}">
+            <!-- <img [src]="image.path" [alt]="image.alt" class="d-block w-100" loading="lazy" /> -->
+             <img
+  [src]="image.path"
+  [alt]="image.alt"
+  class="d-block w-100"
+  [attr.loading]="i === 0 ? 'eager' : 'lazy'"
+  
+/>
             <div class="carousel-caption" [ngClass]="{
                 'sucesswidth': image.heading === 'Success Factors',
                 'sustainwidth': image.heading === 'Sustainable Development'

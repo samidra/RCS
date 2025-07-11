@@ -7,11 +7,11 @@
         </div>
     </div>
 
-
-
     <div class="row">
         <div class="col-12" style="display: flex; justify-content: center; padding: 30px;">
-            <p>At RCS Engineering, we are more than just engineers and developers—we are innovators, problem solvers and dreamers. We believe in the power of technology to shape a better world, and we’re always looking for passionate individuals to join us on this journey.</p>
+            <p>At RCS Engineering, we are more than just engineers and developers—we are innovators, problem solvers and
+                dreamers. We believe in the power of technology to shape a better world, and we’re always looking for
+                passionate individuals to join us on this journey.</p>
         </div>
         <div class="col-12 whyuscont">
             <h2>Why Work With Us?</h2>
@@ -21,7 +21,8 @@
                     <div class="corner-element"></div>
                     <h4>Work That Matters</h4>
                     <p class="mb-4 p-2">
-                        We take on projects that are impactful, from scalable software solutions to cutting-edge engineering innovations. You’ll work on real-world challenges that make a difference. 
+                        We take on projects that are impactful, from scalable software solutions to cutting-edge
+                        engineering innovations. You’ll work on real-world challenges that make a difference.
                     </p>
                 </div>
 
@@ -30,16 +31,18 @@
                     <div class="corner-element"></div>
                     <h4>Collaborative Culture</h4>
                     <p class="mb-4 p-2">
-                        We believe the best ideas come from collaboration. You’ll be part of a diverse and inclusive environment where your voice matters.
+                        We believe the best ideas come from collaboration. You’ll be part of a diverse and inclusive
+                        environment where your voice matters.
                     </p>
                 </div>
 
-                 <!-- --------------- -->
-                 <div class="col-md-5 col-12 squarecontent">
+                <!-- --------------- -->
+                <div class="col-md-5 col-12 squarecontent">
                     <div class="corner-element"></div>
                     <h4>Career Growth</h4>
                     <p class="mb-4 p-2">
-                        We invest in your professional development with mentorship programs, training and clear pathway for advancement.
+                        We invest in your professional development with mentorship programs, training and clear pathway
+                        for advancement.
                     </p>
                 </div>
 
@@ -48,7 +51,8 @@
                     <div class="corner-element"></div>
                     <h4>Work-Life Balance</h4>
                     <p class="mb-4 p-2">
-                        We believe in delivering excellence; without sacrificing your well-being. We promote a culture that help you maintain a healthy balance.
+                        We believe in delivering excellence; without sacrificing your well-being. We promote a culture
+                        that help you maintain a healthy balance.
                     </p>
                 </div>
 
@@ -57,7 +61,8 @@
 
         <div class="col-12" style="display: flex; flex-direction: column; justify-content: center; padding: 30px;">
             <h2 style="text-align: center;">Join Our Team of Experts</h2>
-            <p>Whether you’re early in your career or a seasoned expert, we’re looking for passionate professionals across key areas like:</p>
+            <p>Whether you’re early in your career or a seasoned expert, we’re looking for passionate professionals
+                across key areas like:</p>
             <ul style="padding-left: 50px; line-height: 40px; column-count: 2; column-gap: 50px;">
                 <li>Software Development (Frontend, Backend, Full Stack)</li>
                 <li>Cloud & DevOps Engineering
@@ -83,7 +88,8 @@
 
             <p>
                 Don’t miss out the opportunity to work with a team that is as committed to your success as you are.
-                Reach out to us at <a href="mailto:careers@rcsengg.com" style="color: #00ceff;">careers&#64;rcsengg.com</a>  or fill the form.
+                Reach out to us at <a href="mailto:careers@rcsengg.com"
+                    style="color: #00ceff;">careers&#64;rcsengg.com</a> or fill the form.
             </p>
 
 
@@ -131,41 +137,40 @@
 
                     <div class="input_field col-12">
                         <label for="phone">Mobile Number</label>
-                        <input id="phone" formControlName="phone" placeholder="Mobile Number" />
+                        <input id="phone" type="number" formControlName="phone" placeholder="Mobile Number" />
                         <div *ngIf="phone?.invalid && phone?.touched" class="error">
                             <small *ngIf="phone?.errors?.['required']">Phone Number is required.</small>
                             <small *ngIf="phone?.errors?.['pattern']">Enter a valid phone number.</small>
                         </div>
                     </div>
 
-                    <div class="col-12 input_field">
-                        <label for="message_to">Message</label>
-                        <input type="text" formControlName="message" id="message_to"
-                            placeholder="Write your message here...">
-                        <div *ngIf="message?.invalid && message.touched" class="error">
-                            <small *ngIf="message?.errors?.['required']">Message is required.</small>
+                    <div class="input_field col-12">
+                        <label for="postion_role">Message:</label>
+                        <input id="postion_role" formControlName="postion_role" placeholder="Area of Expertise, Key Skills etc." />
+                        <div *ngIf="postion_role?.invalid && postion_role?.touched" class="error">
+                            <small *ngIf="postion_role?.errors?.['required']">This field is required.</small>
+                            <small *ngIf="postion_role?.errors?.['minlength']">Must have at least 3 characters
+                                long.</small>
+                            <small *ngIf="postion_role?.errors?.['maxlength']">Cannot exceed 30
+                                characters.</small>
                         </div>
                     </div>
 
-                    <div class="col-12 input_field">
+                    <!-- <div class="col-12 input_field">
                         <label for="resume">Resume:</label>
-                        <input id="resume" type="file" formControlName="resume" (change)="onFileChange($event)" />
-                        <div *ngIf="resume?.touched && resume?.hasError('required')" class="error">
+                        <input id="resume" type="file" required name="resume" (change)="onFileChange($event)" />
+                        <div *ngIf="resume === null" class="error">
                             Resume is required.
                         </div>
-                    </div>
+                    </div> -->
 
-                    <button type="submit">Submit</button>
-
+                    <button type="submit" *ngIf="!Is_load">Submit</button>
+                    <button *ngIf="Is_load">
+                        <div class="spinner" style="color: white !important; " role="status"></div>
+                    </button>
                 </div>
             </form>
-
-
-
         </div>
-
     </div>
-
     <hr>
-
 </div>

@@ -11,78 +11,83 @@
 
   <div class="row part4">
     <div class="col-12" style="display: flex; justify-content: center; padding: 30px;">
-      <p>At RCS Engineering, we’re all about collaboration, innovation and delivering solutions that make a difference. Whether you’re looking for engineering expertise, custom software development or partner for digital initiatives in your organization, we’re just a message away.</p>
+      <p>At RCS Engineering, we’re all about collaboration, innovation and delivering solutions that make a difference.
+        Whether you’re looking for engineering expertise, custom software development or partner for digital initiatives
+        in your organization, we’re just a message away.</p>
     </div>
     <hr>
-  <div class="row p-md-3 pb-3" style="background-color: #003b88;">
-    <div class="col-12 contactandmap">
-      <h3 >Get in Touch</h3>
-      <p>
-        Drop us an email at <a href="mailto:info@rcsengg.com" style="color:#00ceff">info&#64;rcsengg.com</a>  or send us a message
-      </p>
+    <div class="row p-md-3 pb-3" style="background-color: #003b88;">
+      <div class="col-12 contactandmap">
+        <h3>Get in Touch</h3>
+        <p>
+          Drop us an email at <a href="mailto:info@rcsengg.com" style="color:#00ceff">info&#64;rcsengg.com</a> or send
+          us a message
+        </p>
+      </div>
+
+      <div class="col-lg-12 p-md-3" style="display: flex; justify-content: center;">
+        <form [formGroup]="enquiry_form" (ngSubmit)="onSubmit()" style="width: 96%;">
+          <div class="row formside">
+            <div class="col-12 colheading_part1">
+              <h4>Contact Us</h4>
+              <p>We’ll get back to you soon</p>
+            </div>
+
+            <div class="input_field col-md-6">
+              <label for="firstName">First Name</label>
+              <input id="firstName" formControlName="firstName" placeholder="First Name" />
+              <div *ngIf="firstName?.invalid && firstName?.touched" class="error">
+                <small *ngIf="firstName?.errors?.['required']">First Name is required.</small>
+                <small *ngIf="firstName?.errors?.['minlength']">First Name must be at least 2 characters long.</small>
+                <small *ngIf="firstName?.errors?.['maxlength']">First Name cannot exceed 30 characters.</small>
+              </div>
+            </div>
+
+            <div class="input_field col-md-6 px-md-2">
+              <label for="lastName">Last Name</label>
+              <input id="lastName" formControlName="lastName" placeholder="Last Name" />
+              <div *ngIf="lastName?.invalid && lastName?.touched" class="error">
+                <small *ngIf="lastName?.errors?.['required']">Last Name is required.</small>
+                <small *ngIf="lastName?.errors?.['minlength']">Last Name must be at least 2 characters long.</small>
+                <small *ngIf="lastName?.errors?.['maxlength']">Last Name cannot exceed 30 characters.</small>
+              </div>
+            </div>
+
+            <div class="input_field col-12">
+              <label for="email">Email</label>
+              <input id="email" formControlName="email" placeholder="Email" />
+              <div *ngIf="email?.invalid && email?.touched" class="error">
+                <small *ngIf="email?.errors?.['required']">Email is required.</small>
+                <small *ngIf="email?.errors?.['email']">Enter a valid email address.</small>
+              </div>
+            </div>
+
+            <div class="input_field col-12">
+              <label for="phone">Mobile Number</label>
+              <input type="number" id="phone" formControlName="phone" placeholder="Mobile Number" />
+              <div *ngIf="phone?.invalid && phone?.touched" class="error">
+                <small *ngIf="phone?.errors?.['required']">Phone Number is required.</small>
+                <small *ngIf="phone?.errors?.['pattern']">Enter a valid phone number.</small>
+              </div>
+            </div>
+
+            <div class="col-12 input_field">
+              <label for="message_to">Message</label>
+              <textarea formControlName="message" id="message_to" placeholder="Write your message here..."></textarea>
+              <div *ngIf="message?.invalid && message.touched" class="error">
+                <small *ngIf="message?.errors?.['required']">Message is required please write reason to connect</small>
+              </div>
+            </div>
+
+            <button type="submit" *ngIf="!Is_load">Submit</button>
+            <button *ngIf="Is_load">
+              <div class="spinner" style="color: white !important; " role="status"></div>
+            </button>
+          </div>
+        </form>
+      </div>
+
     </div>
-
-    <div class="col-lg-12 p-md-3" style="display: flex; justify-content: center;">
-      <form [formGroup]="enquiry_form" (ngSubmit)="onSubmit()" style="width: 96%;">
-        <div class="row formside">
-          <div class="col-12 colheading_part1">
-            <h4>Contact Us</h4>
-            <p>We’ll get back to you soon</p>
-          </div>
-
-          <div class="input_field col-md-6">
-            <label for="firstName">First Name</label>
-            <input id="firstName" formControlName="firstName" placeholder="First Name" />
-            <div *ngIf="firstName?.invalid && firstName?.touched" class="error">
-              <small *ngIf="firstName?.errors?.['required']">First Name is required.</small>
-              <small *ngIf="firstName?.errors?.['minlength']">First Name must be at least 2 characters long.</small>
-              <small *ngIf="firstName?.errors?.['maxlength']">First Name cannot exceed 30 characters.</small>
-            </div>
-          </div>
-
-          <div class="input_field col-md-6 px-md-2">
-            <label for="lastName">Last Name</label>
-            <input id="lastName" formControlName="lastName" placeholder="Last Name" />
-            <div *ngIf="lastName?.invalid && lastName?.touched" class="error">
-              <small *ngIf="lastName?.errors?.['required']">Last Name is required.</small>
-              <small *ngIf="lastName?.errors?.['minlength']">Last Name must be at least 2 characters long.</small>
-              <small *ngIf="lastName?.errors?.['maxlength']">Last Name cannot exceed 30 characters.</small>
-            </div>
-          </div>
-
-          <div class="input_field col-12">
-            <label for="email">Email</label>
-            <input id="email" formControlName="email" placeholder="Email" />
-            <div *ngIf="email?.invalid && email?.touched" class="error">
-              <small *ngIf="email?.errors?.['required']">Email is required.</small>
-              <small *ngIf="email?.errors?.['email']">Enter a valid email address.</small>
-            </div>
-          </div>
-
-          <div class="input_field col-12">
-            <label for="phone">Mobile Number</label>
-            <input id="phone" formControlName="phone" placeholder="Mobile Number" />
-            <div *ngIf="phone?.invalid && phone?.touched" class="error">
-              <small *ngIf="phone?.errors?.['required']">Phone Number is required.</small>
-              <small *ngIf="phone?.errors?.['pattern']">Enter a valid phone number.</small>
-            </div>
-          </div>
-
-          <div class="col-12 input_field">
-            <label for="message_to">Message</label>
-            <textarea formControlName="message" id="message_to" placeholder="Write your message here..."></textarea>
-            <div *ngIf="message?.invalid && message.touched" class="error">
-              <small *ngIf="message?.errors?.['required']">Message is required please write reason to connect</small>
-            </div>
-          </div>
-
-          <button type="submit">Submit</button>
-
-        </div>
-      </form>
-    </div>
-
-  </div>
 
     <hr>
     <div class="col-lg-12 quality_product_div2" style="margin: 60px 0;">
